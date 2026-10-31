@@ -225,3 +225,23 @@ input[type=radio] + label, input[type=checkbox] + label {
     font-size: 1em;
     background-color: rgba(0, 0, 0, 0);
 }
+
+.divisao {
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.divisao td {
+    width: 60px;
+    height: 50px;
+}
+
+.linha-vertical {
+    border-right: 2px solid black;
+}
+
+.linha-horizontal {
+    border-bottom: 2px solid black;
+}
