@@ -1,8 +1,6 @@
 <?php 
-    $r = $_GET["real"];
-    $cotacao = 5.44;
-    $d = $r / $cotacao;
-    # cotação estava em 5,44 no dia.
+    $limit = $_GET["limit"];
+    $result = rand(0, $limit);
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css"">
 </head>
 <body>
     <header>
@@ -19,7 +17,9 @@
     </header>
 
     <main>
-        <p>Você possuí: <?php printf("%.2f", $d); ?> dolares</p>
+        <p>Número aleatório gerado: <?php echo $result; ?></p>
+
+        <p><a href="javascript:history.go(-1)">Go Back</a></p>
     </main>
 </body>
 </html>
