@@ -44,6 +44,7 @@
         <header>
             <h2>Resultado</h2>
         </header>
+       
         <p>A média aritmética dos valores inseridos é: <?=$media?></p>
     </section>
     
